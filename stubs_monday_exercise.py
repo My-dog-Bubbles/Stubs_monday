@@ -92,7 +92,8 @@ def test_assign_study_group():
 def get_api_url(key_value = None):
     if key_value == None:
         env = os.getenv("APP_ENV")
-    env = os.key_value
+    else:
+        env = key_value
     if env == "production":
         return "https://api.example.com"
     else:
